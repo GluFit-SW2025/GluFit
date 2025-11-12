@@ -14,14 +14,14 @@ GluFit은 **음식 이미지 인식 기술**과 **AI 영양소 예측 모델**�
 ## ⚙️ 시스템 구성도
 ```mermaid
 flowchart TD
-    A[사용자 입력<br>(음식 이미지 업로드)] --> B[이미지 전처리<br>리사이즈·정규화·증강]
-    B --> C[음식 분류 모델<br>(CNN / Vision Transformer)]
-    C --> D[음식 종류 예측 결과]
-    D --> E[영양소 예측 모델<br>(LightGBM / Multi-output Regression NN)]
-    E --> F[영양 성분 산출<br>(칼로리, 탄수화물, 단백질, 지방 등)]
-    F --> G[결과 JSON 반환]
-    G --> H[프론트엔드 시각화<br>React 기반 결과 표시]
-    H --> I[위험 영양소 감지 시<br>경고 알림 표시]
+    A["사용자 입력<br>(음식 이미지 업로드)"] --> B["이미지 전처리<br>리사이즈·정규화·증강"]
+    B --> C["음식 분류 모델<br>(CNN / Vision Transformer)"]
+    C --> D["음식 종류 예측 결과"]
+    D --> E["영양소 예측 모델<br>(LightGBM / Multi-output Regression NN)"]
+    E --> F["영양 성분 산출<br>(칼로리, 탄수화물, 단백질, 지방 등)"]
+    F --> G["결과 JSON 반환"]
+    G --> H["프론트엔드 시각화<br>React 기반 결과 표시"]
+    H --> I["위험 영양소 감지 시<br>경고 알림 표시"]
 ```
 
 ---
